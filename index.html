@@ -8,70 +8,77 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>ITMS-like Website</h1>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>ITMS</h2>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
                     <li><a href="#notice-board">Notice Board</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#settings">Settings</a></li>
                 </ul>
             </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="top-bar-container">
+                    <h1>Welcome to ITMS</h1>
+                    <div class="user-menu">
+                        <span>User Name</span>
+                        <a href="#logout">Logout</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Sections -->
+            <main>
+                <section id="dashboard">
+                    <h2>Dashboard</h2>
+                    <p>Overview of the system functionality.</p>
+                </section>
+
+                <section id="notice-board">
+                    <h2>Notice Board</h2>
+                    <div class="notices">
+                        <article>
+                            <h3>Notice 1</h3>
+                            <p>Details about the first notice go here.</p>
+                        </article>
+                        <article>
+                            <h3>Notice 2</h3>
+                            <p>Details about the second notice go here.</p>
+                        </article>
+                        <article>
+                            <h3>Notice 3</h3>
+                            <p>Details about the third notice go here.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>User Registration and Login</li>
+                        <li>Dynamic Dashboard</li>
+                        <li>Data Management Tools</li>
+                        <li>Reports and Analytics</li>
+                    </ul>
+                </section>
+
+                <section id="settings">
+                    <h2>Settings</h2>
+                    <p>Manage user preferences and system configurations here.</p>
+                </section>
+            </main>
         </div>
-    </header>
-
-    <main>
-        <section id="home">
-            <h2>Welcome to the ITMS-like Website</h2>
-            <p>This is a placeholder for your main content.</p>
-        </section>
-
-        <section id="notice-board">
-            <h2>Notice Board</h2>
-            <div class="notices">
-                <article>
-                    <h3>Notice 1</h3>
-                    <p>Details about the first notice go here.</p>
-                </article>
-                <article>
-                    <h3>Notice 2</h3>
-                    <p>Details about the second notice go here.</p>
-                </article>
-                <article>
-                    <h3>Notice 3</h3>
-                    <p>Details about the third notice go here.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>User Registration and Login</li>
-                <li>Dynamic Dashboard</li>
-                <li>Data Management Tools</li>
-                <li>Reports and Analytics</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="/submit" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+    </div>
 
     <footer>
         <div class="container">
